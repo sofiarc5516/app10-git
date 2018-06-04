@@ -1,0 +1,592 @@
+<!doctype html>
+<html>
+<head>
+<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+  <link rel="stylesheet" type="text/css" href="engine1/style.css" />
+  <script type="text/javascript" src="engine1/jquery.js"></script>
+  <!-- End WOWSlider.com HEAD section -->
+
+<meta charset="utf-8">
+<title>aplicación 10 Bases de datos</title>
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app10.min.css">
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript -->
+<script src="js/jquery-1.11.2.min.js"> </script>
+<script src="js/jquery.mobile-1.4.5.min.js"> </script>
+<script src="js/acciones.js" type="text/javascript"></script>
+<script src="phonegap.js"></script> <!--necesario*/ -->
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+<body onLoad="MM_preloadImages('imagenes/banner2.jpg','imagenes/bicihipy4.jpg','imagenes/BasuraCalle2.jpg')">
+<div data-role="page" data-theme="a">
+<div data-role="header" data-add-back-btn="true" dat-back-btn-text="Regresar" data-theme="b">
+<h1>Bases de Datos</h1>
+</div>
+<div data-role="main" class="ui-content" align="center">
+<div data-role="collapsible" data-content-theme="false">
+    <h1>¿QUE ES UNA BACE DE DATOS?</h1>
+      <div>
+       <h4> Una base de datos es un conjunto de datos pertenecientes a un mismo contexto y almacenados sistemáticamente para su posterior uso. En este sentido; una biblioteca puede considerarse una base de datos compuesta en su mayoría por documentos y textos impresos en papel e indexados para su consulta. Actualmente, y debido al desarrollo tecnológico de campos como la informática y la electrónica, la mayoría de las bases de datos están en formato digital, siendo este un componente electrónico, por tanto se ha desarrollado y se ofrece un amplio rango de soluciones al problema del almacenamiento de datos.       </h4>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','imagenes/BaseDatos.png',1)"><img src="imagenes/DateBase.png" width="70%" height="70%" id="Image3"></a>
+      </div> 
+</div> </div>
+<div>
+<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Historia de las Bases de Datos</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Para que sirven las Baces de Datos</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Tipos de Base de Datos</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Comó se crea una BD Sencilla?</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Como se Crea Una BD Avanzada?</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Qué Importancia Tienen las Bases de Datos?</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Uso de las BD en la Escuela</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>La Relacion de Las BD y la Escuela</h2>
+</a>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2> Bases de Datos en Sitios Web</h2>
+</a>
+</li>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina10" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Datos del Desarrollador</h2>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="b" data-position="fixed">
+<div>
+<img src="imagenes/bd.png" width="46" height="46">
+</div>
+<h4>Aplicación Díez</h4>
+<h4>Ramos Contla Sofia</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" dat-back-btn-text="Regresar" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Historia de las Bases de Datos</h1> </div>
+<div data-role="content" align="center">
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','imagenes/historia1.jpg',1)"><img src="imagenes/historia2.jpg" width="70%" height="70%" id="Image10"></a><p>
+  La primera vez que se escuchó el término base de datos fue en un congreso celebrado en California en 1963. Una base de datos es un cúmulo de información que se encuentra reunida o estructurada.</p><p>
+Sus orígenes provienen de la antigüedad, donde ya existían bibliotecas y toda clase de registros, también la utilizaban para recoger información sobre las cosechas.</p><p>
+Se empezaron a desarrollar cuando emepezó a ser necesario almacenar grandes cantidades de información o datos. El concepto de bases de datos siempre ha estado ligado a la informática.</p><p>
+En 1884 Herman Hollerith diseño la máquina automática de tarjetas perforadas, ante este hecho empezó a crear una máquina tabuladora, basada en tarjetas perforadas.</p><p>
+En la década de los 50 se da origen a las cintas magnéticas, esto sirvió para sustituir las necesidades de información de las nuevas industrias.</p><p>
+En la década de los 60, bajaron los precios de los ordenadores para que se pudiesen adquirir y hacer popular el uso de los discos. En esta época también empezaron las primeras generaciones de bases de datos de red y las bases de datos jerárquicas. Durante este tiempo también se unieron IBM y American Airlines para crear SABRES, un sistema operativo que controlaba las reservas de vuelos, información de los pasajeros y las transacciones.</p><p>
+Más tarde, Charles Bachman creó un nuevo tipo de bases de datos y esto permitió la creación de un standar en los sistemas de bases de datos gracias a invención de nuevos lenguajes de sistemas de información.</p><p>
+En la década de los 70, un científico informático inglés, llamado Edgar Frank Codd, aclaró el modelo relacional a la vez que publicó una serie de reglas para los sistemas de datos relacionales; a raíz de esto nació la segunda generación de los Sistemas Gestores de Bases de Datos.</p><p>
+Gracias al trabajo de Edgar F. Codd, Larry Ellison desarrolló el Relational Software System, aunque actualmente se conoce como Oracle Corporation, creando así un sistema de gestión de bases de datos relacional con el nombre de la compañía.Edgar Frank Codd</p><p>
+En la época de los 80 se creó un lenguaje de consultas de acceso a bases de datos que permite realizar consultas para recuperar información de interés de una base de datos y realizar cambios de manera sencilla; aparte de examinar grandes cantidades de información y deja detallar varios tipos de operaciones frente a la misma información.</p><p>
+Durante este tiempo SQL comenzó a ser el modelo de la industria; las bases de datos relacionales con su sistema de tablas pudieron competir con las bases jerárquicas y de red.</p><p>
+En los años 90, investigaron las bases de datos orientadas en objetos. Han tenido bastante éxito a la hora de ejecutar datos complejos en los terrenos donde las bases de datos relacionales no han podido desenvolverse de manera eficaz. Así se crearon herramientas como el Excel y Access.</p><p>
+Así se creó la tercera generación de sistemas gestores de bases de datos.</p><p>
+En esta época también, se empezó a incorporar nuevas expresiones regulares, consultas recursivas y algunas características orientadas a objetos. Además se creó la oportunidad  de que SQL se pueda utilizar simultáneamente XML, y se determina como importar y guardar datos XML  en una base de datos SQL.</p><p>
+Lo sorprendente de esta década es el nacimiento del World  Wide Web y gracias a éste es más fácil la consulta a bases de datos.</p><p>
+Actualmente, dominan las bases de datos tres compañías que son IBM, Microsoft y Oracle. En internet el preferido es google, aunque LINQ también te permite crear y manejar bases de datos con  facilidad.</p><p>
+En Net el objetivo es aprobar que todo el código hecho en Visual Studio sea también orientado a objetos; éste último es un ámbito de desarrollo  constituido para sistemas operativos Windows que soporta varios lenguajes de programación.</p><p>
+Aunque se están desplegando las extensiones imprescindibles para otros, que tienen como objetivo crear aplicaciones, sitios y aplicaciones web que soporte la plataforma NET, generando así aplicaciones que intercomuniquen entre estaciones de trabajo, páginas web y dispositivos móviles.</p> </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/bd.png" width="46" height="46">
+</div>
+<h4>Aplicación Díez, RCS </h4>
+</div>
+</div>
+<!--termina la historia-->
+
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" dat-back-btn-text="Regresar" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>¿Para que sirven las Baces de Datos?</h1>
+</div>
+<div data-role="content" align="center">
+<div>
+<p>Trabajar con bases de datos es fácil cuando tienes los conocimientos necesarios:</p>
+<p>Por ejemplo, una agenda con direcciones es una base de datos, allí guardas nombres,telefonos o direcciones.En una versión electrónica una base de datos tiene las siguientes características:</p>
+  <p>Almacena información</p>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','imagenes/utilidad4.jpg',1)"><img src="imagenes/utilidad3.png" width="70%" height="70%" id="Image9"></a>
+  <p>Esta información se encuentra indexada y se mantienen los datos almacenados en un orden tal que permita su búsqueda rápida</p>
+  <p>Incluye un sistema de recuperación rápida</p><p>
+  Una base de datos (sea cual sea) es un soporte digital que tiene como fin el almacenamiento masivo de información en formato texto plano. No es capaz de almacenar imágenes como se cree, sino que almacena las rutas (path) de dichas fotos; ni almacena otro tipo de datos; sino que almacena sus rutas de acceso de ser necesario.</p><p>
+Las bases de datos, son utilizadas en sistemas que requieren una interacción fluida con la aplicación; estas se encargan muchas veces de administrar, editar, y dar de alta. Usualmente la base de datos, esta ligada a la programación directa del site, causando que una edición en ella cause una modificación directa en lo que ve el usuario.</p>
+<p>Ejemplos de aplicación de una base de datos (entiéndase que están ligadas a un lenguaje dinámico como PHP o ASP):
+E – comerce, Agendas, Libros de visitas, foros, portales, etc.</p>
+<p><img src="imagenes/utilidad2.gif" width="70%" height="70%">
+<p><strong>¿Por que utilizarlas</strong></p><p>
+  Una base de datos proporciona a los usuarios el acceso a datos, que pueden visualizar, ingresar o actualizar, en concordancia con los derechos de acceso que se les hayan otorgado. Se convierte más útil a medida que la cantidad de datos almacenados crece.
+
+Una base de datos puede ser local, es decir que puede utilizarla solo un usuario en un equipo, o puede ser distribuida, es decir que la información se almacena en equipos remotos y se puede acceder a ella a través de una red. La principal ventaja de utilizar bases de datos es que múltiples usuarios pueden acceder a ellas al mismo tiempo.</p>
+
+  <p><img src="imagenes/Utilidad.jpg" width="70%" height="70%">
+  </p>
+    <div style="width:60%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="https://www.hostname.cl/blog/para-que-sirven-la-bases-de-datos" data-role="button" id="beep"> 
+  <h5><strong>Mas información</strong></h5> 
+  </a>
+  </li>
+  </ul>
+  </div>
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/bd.png" width="46" height="46">
+</div>
+<h3>Aplicación Díez , RCS</h3>
+</div>
+</div>
+<!--Termina para que sirve-->
+
+  <div data-role="page" id="Pagina4" data-add-back-btn="true" dat-back-btn-text="Regresar" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1><strong>Tipos de Base de Datos</strong></h1>
+</div>
+<div data-role="content" align="center">
+<div>
+  <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','imagenes/tipo1.jpg',1)"><img src="imagenes/tipo2.jpg" width="70%" height="70%" id="Image1"></a></p>
+  <p><strong>Existen diferentes maneras de ordenar y organizar la información para que este sea accesible para nosotros.hay que elegir aquella estructura que mejor se adapte a nuestras necesidades. Los siguientes son los tipos más comunes:</strong></p>
+  <ul>
+    <li>Las bases de datos jerárquicas construyen una estructura de jerarquía con los datos que permite una estructuración muy estable cuando gestionamos una gran cantidad de datos muy interrelacionados.</li>
+<li>Las bases de datos en red derivan de las jerárquicas pero mejoran la gestión de datos redundantes manteniendo su rendimiento en consultas de datos.</li>
+<li>Las bases de datos transaccionales están diseñadas para el envío y recepción de datos a grandes velocidades y de forma continua. Su único fin es la recepción y envío de información pero la gestión de almacenamiento o redundancia están fuera de su propósito.</li>
+<li>Las bases de datos relacionales son las más utilizadas en aplicaciones reales. La información se almacena siempre haciendo referencia a otra por lo que se facilita la gestión y su uso por personal no especialista. En este modelo el lugar y la forma donde se guarde la información es secundario.</li>
+<li>Las bases de datos orientadas a objetos han surgido como concepto tras la aparición de los sistemas de programación orientada a objetos.</li>
+<li>Las bases de datos documentales están especializadas en el almacenamiento de textos completos, por lo que facilitan el tratamiento informatizado de grandes cadenas de caracteres.</li>
+  </ul>
+  <img src="imagenes/Tipo3.gif" width="70%" height="70%" >
+  <div data-role="main" class="ui-content" align="center">
+  <div style="width:60%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="http://basededatos.over-blog.net/article-tipos-de-bases-de-datos-68319538.html" data-role="button" id="beep"> 
+  <h2>Mas Detalles </h2> 
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div> 
+</div>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/bd.png" width="46" height="46">
+</div>
+<h4>Aplicación Díez, RCS </h4>
+</div>
+</div>
+<!--Termina tipos de base-->
+
+    <div data-role="page" id="Pagina3" data-add-back-btn="true" dat-back-btn-text="Regresar" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>¿Como se Crea Una Base de Datos Sencilla?</h1></div>
+<div data-role="content" align="center">
+  <p>
+    Para empesar a crea una base de datos sencilla debemos abrir<strong>Access</strong> </p><p>
+     <center> <img src="imagenes/creasen1.png" width="70%" height="70%" ></center><p>
+      Al abrir Access, la vista Backstage muestra la pestaña Nuevo. La pestaña Nuevo ofrece varias formas de crear una base de datos:
+Una base de datos en blanco Puede empezar desde cero si quiere. Se trata de una buena opción si se tienen requisitos de diseño muy concretos o datos existentes que hay que adaptar o incorporar</p>.
+Una plantilla que se instala con Access Considere la posibilidad de usar una plantilla si va a iniciar un nuevo proyecto y quiere adelantar trabajo. Access incluye varias plantillas instaladas de manera predeterminada.
+Una plantilla de Office.com Además de las incluidas en Access, puede encontrar otras muchas plantillas en Office.com. Ni siquiera tiene que abrir un explorador, las plantillas están disponibles en la pestaña Nuevo.
+Si no está interesado en usar una plantilla, puede crear una base de datos creando sus propias tablas, formularios, informes y otros objetos de base de datos. En la mayoría de los casos, esto implica uno o ambos de los procedimientos siguientes:
+Escribir, pegar, o importar datos en la tabla que se crea al crear una base de datos y después repetir el proceso con otras tablas que cree mediante el comando Tabla de la pestaña Crear.
+Importar datos de otros orígenes y crear otras tablas en el proceso.
+Crear una base de datos en blanco
+Haga clic en la pestaña Archivo, en Nuevo y luego, en Base de datos en blanco.
+Escriba un nombre de archivo en el cuadro Nombre de archivo. Para cambiar la ubicación predeterminada del archivo, haga clic en Buscar una ubicación donde colocar la base de datos Imagen del botón (junto al cuadro Nombre de archivo), vaya a la nueva ubicación y haga clic en Aceptar.
+Haga clic en Crear.
+Access crea la base de datos con una tabla vacía denominada Tabla1 y, luego, abre esa tabla en la vista Hoja de datos. El cursor se coloca en la primera celda vacía de la columna Haga clic para agregar.
+Comience a escribir para agregar datos o puede pegar datos de otro origen, tal y como se describe en la sección Copiar los datos de otro origen en una tabla de Access.
+Escribir datos en la vista Hoja de datos es muy similar a trabajar en una hoja de cálculo de Excel. La estructura de tabla se crea al escribir los datos. Cuando agrega una nueva columna a la hoja de datos, se define un nuevo campo en la tabla. En función de los datos que se escriben, Access establece automáticamente el tipo de datos de cada campo.</p>
+<img src="imagenes/BDsencilla.jpg" width="70%" height="70%" >
+<img src="imagenes/creasen2.jpg" width="70%" height="70%" >
+
+<div style="width:60%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="https://www.youtube.com/watch?v=eVPT3i5zYuQ" data-role="button" id="beep"> 
+  <h5><strong>Mini Tutorial</strong></h5> 
+  </a>
+  </li>
+  </ul>
+  </div>
+  </div>
+<div data-role="footer" align="center" data-theme="b" data-position="fixed">
+<div>
+<img src="imagenes/bd.png" width="46" height="46">
+</div>
+<h4>Aplicacion Diez, RCS </h4>
+</div>
+  </div>
+  <!--Termina como se crebd sen-->
+
+    <div data-role="page" id="Pagina5" data-add-back-btn="true" dat-back-btn-text="Regresar" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>¿Como se Crea Una Base de Datos Avanzada?</h1></div>
+<div data-role="content" align="center">
+<strong>Para crea una BD Avanzada se debe agregar un filtro</strong><p>
+Paso 1:Haz clic en el comando Avanzadas el cual se encuentra en el grupo Ordenar y Filtrar en la pestaña o ficha de Inicio. </p>
+<img src="imagenes/avenzada2.jpg" width="70%" height="70%" ><p>
+Paso 2:Desde el menú desplegable, selecciona la opción FIltro Avanzado/Ordenar. Diseño de la Pantalla del Filtro Avanzado</p><p>
+Paso 3:La pantalla diseño se abrirá con el fin de que puedas configurar un criterio de filtro y/u Orden para los diferentes campos en la tabla.</p><p>
+Paso 4:Para ordenar o filtrar otro campo, arrastra el nombre del campo de la tabla que está en la parte superior y ubícalo en una de las casillas superiores del panel inferior.</p><p>
+Paso 5:Para ordenar el nuevo campo, haz clic en la celda de la fila Orden. Escoge la opción que deseas usar de la lista desplegable que aparece en la casilla</p><p>
+<strong>Para filtrar un nuevo campo:</strong><p>
+Paso 1:Haz clic en la celda de la fila Criterios.</p> <p>
+Paso 2:Ingresa el criterio escribiendo en la celda. Access pondrá comillas alrededor del criterio, mostrándote que buscarás ese valor exactamente.
+Importante: Access ordenará de izquierda a derecha, según la manera que estén desplegados en el panel del Filtro Avanzado. Cuando todas los órdenes estén terminadas, Access aplicará los filtros. Access filtra de izquierda a derecha, basándose en el orden diseñado en la pantalla Filtro Avanzado.</p><p>
+Paso 3:Para ver el resultado, haz clic en el botón Alternar Filtro de la pestaña o ficha de Inicio.</p><p>
+Paso 4:Los resultados filtrados aparecerán en la nueva tabla. Puedes guardar los filtros avanzados, para el caso de que quieras realizar este filtro más adelante.</p>
+<img src="imagenes/avenzada1.png" width="70%" height="70%" >
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','imagenes/img10.png',1)"><img src="imagenes/BDavanzada1.jpg" width="70%" height="70%" id="Image3"></a>
+<div style="width:60%;">
+  <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+  <a href="https://www.youtube.com/watch?v=BkzILr0TxRE" data-role="button" id="beep"> 
+  <h5>AYUDA</h5> 
+  </a>
+  </li>
+  </ul>
+</div> 
+</div>
+  <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+<div>
+<img src="imagenes/bd.png" width="46" height="46">
+</div>
+<h4>Aplicación Díez, RCS </h4>
+</div> </div>
+<!--termina creas bd avanza-->
+
+    <div data-role="page" id="Pagina6" data-add-back-btn="true" dat-back-btn-text="Regresar" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>¿Qué importancia tienen las bases de datos?</h1>
+</div>
+<div data-role="content" align="center">
+  <h3>Las Bases de Datos tienen una gran relevancia a nivel personal, pero más si cabe, a nivel empresarial, y se consideran una de las mayores aportaciones que ha dado la informática a las empresas. En la actualidad, cualquier organización que se precie, por pequeña que sea, debe contar con una Base de Datos, pero para que sea todo lo efectiva que debe, no basta con tenerla: hay que saber cómo gestionarlas.<p><img src="imagenes/import1.jpg" width="70%" height="70%" ></p>
+    En el caso de que en nuestra compañía no contemos con una persona que se encargue de esta labor, existe la posibilidad de contratar a una empresa externa que se encargue.<p>
+Las principales utilidades que ofrece una base de datos a la empresa son las siguientes:</p><p>
+Agrupar y almacenar todos los datos de la empresa en un único lugar.</p><p>
+Facilitar que se compartan los datos entre los diferentes miembros de la empresa.</p><p>
+Evitar la redundancia y mejorar la organización de la agenda.</p><p>
+Realizar una interlocución adecuada con los clientes.</p><p>
+Si una Base de Datos se gestiona adecuadamente, la organización obtendrá diferentes ventajas. Aumentará su eficacia, habrá trabajos que se realicen con mayor rapidez y agilidad debido a la simplificación de los mismos, podremos mejorar la seguridad de los datos que almacenamos, y con todos estos factores, maximizaremos los tiempos y por tanto, se producirá una mejora en la productividad.</p></h3>
+<img src="imagenes/import2.jpg" width="70%" height="70%" >
+<div style="width:60%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+ <li class="ui-first-child">
+ <a href="http://www.datacentric.es/blog/bases-datos/importancia-bases-de-datos-2/" data-role="button" id="beep">
+ <h3>Más Información</h3> 
+ </a></li>
+</ul>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Presentación</h1>
+<div>
+
+<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+    <li><img src="data1/images/importancia1.jpg" alt="importancia1" title="importancia1" id="wows1_0"/></li>
+    <li><img src="data1/images/importancia2.jpg" alt="importancia2" title="importancia2" id="wows1_1"/></li>
+    <li><img src="data1/images/importancia3.jpg" alt="importancia3" title="importancia3" id="wows1_2"/></li>
+    <li><img src="data1/images/importancia4.jpg" alt="importancia4" title="importancia4" id="wows1_3"/></li>
+    <li><img src="data1/images/importancia5.jpg" alt="importancia5" title="importancia5" id="wows1_4"/></li>
+    <li><img src="data1/images/importancia6.jpg" alt="importancia6" title="importancia6" id="wows1_5"/></li>
+    <li><a href="http://wowslider.com"><img src="data1/images/importancia7.jpg" alt="http://wowslider.com/" title="importancia7" id="wows1_6"/></a></li>
+    <li><img src="data1/images/importancia8.jpg" alt="importancia8" title="importancia8" id="wows1_7"/></li>
+  </ul></div>
+  <div class="ws_bullets"><div>
+    <a href="#" title="importancia1"><span><img src="data1/tooltips/importancia1.jpg" alt="importancia1"/>1</span></a>
+    <a href="#" title="importancia2"><span><img src="data1/tooltips/importancia2.jpg" alt="importancia2"/>2</span></a>
+    <a href="#" title="importancia3"><span><img src="data1/tooltips/importancia3.jpg" alt="importancia3"/>3</span></a>
+    <a href="#" title="importancia4"><span><img src="data1/tooltips/importancia4.jpg" alt="importancia4"/>4</span></a>
+    <a href="#" title="importancia5"><span><img src="data1/tooltips/importancia5.jpg" alt="importancia5"/>5</span></a>
+    <a href="#" title="importancia6"><span><img src="data1/tooltips/importancia6.jpg" alt="importancia6"/>6</span></a>
+    <a href="#" title="importancia7"><span><img src="data1/tooltips/importancia7.jpg" alt="importancia7"/>7</span></a>
+    <a href="#" title="importancia8"><span><img src="data1/tooltips/importancia8.jpg" alt="importancia8"/>8</span></a>
+  </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">bootstrap carousel</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>  
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+</div>
+<div>
+<img src="imagenes/C.png" width="70%" height="70%">
+</div>
+</div>
+
+
+  </div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/bd.png" width="46" height="46">
+</div>
+<h4>Aplicación Díez, RCS </h4>
+</div>
+</div>
+<!-- termina la imortancia-->
+
+      <div data-role="page" id="Pagina7" data-add-back-btn="true" dat-back-btn-text="Regresar" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Uso de las BD en el Trabajo</h1>
+  </div>
+<div data-role="content" align="center">
+  <h3>
+
+<img src="imagenes/escuel2.jpg" width="50%"" height="50%" ><p>
+Las Bases de Datos desde sus inicioas hasta la actuañidad, han hecho de nustra vida una facilidad de compilaciones de información; tanto de proyectos escolarescomo de información laboral de cada cliente, empleado, acciones, productos, máquinas, etc.</p><p>
+Es por ello quue te recomendamos leer este pequeño pero importante artículo sobre la experiencia que tuvo este colegio sobre las TIC'S</p></h3> 
+
+<img src="imagenes/escuel1.png" width="70%" height="70%" >
+
+<!-- Start WOWSlider.com BODY section --> <!-- add to the <body> of your page -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+    <li><img src="data1/images/educacion3.jpg" alt="educacion3" title="educacion3" id="wows1_0"/></li>
+    <li><img src="data1/images/edicacion5.png" alt="edicacion5" title="edicacion5" id="wows1_1"/></li>
+    <li><img src="data1/images/educacion2.jpg" alt="educacion2" title="educacion2" id="wows1_2"/></li>
+    <li><img src="data1/images/edicacion6.png" alt="edicacion6" title="edicacion6" id="wows1_3"/></li>
+    <li><img src="data1/images/educacion1.jpg" alt="educacion1" title="educacion1" id="wows1_4"/></li>
+    <li><img src="data1/images/edicacion7.jpg" alt="edicacion7" title="edicacion7" id="wows1_5"/></li>
+    <li><a href="http://wowslider.net"><img src="data1/images/educacion4.jpg" alt="jquery carousel" title="educacion4" id="wows1_6"/></a></li>
+    <li><img src="data1/images/edicacion8.jpg" alt="edicacion8" title="edicacion8" id="wows1_7"/></li>
+  </ul> </div>
+  <div class="ws_bullets"><div>
+    <a href="#" title="educacion3"><span><img src="data1/tooltips/educacion3.jpg" alt="educacion3"/>1</span></a>
+    <a href="#" title="edicacion5"><span><img src="data1/tooltips/edicacion5.png" alt="edicacion5"/>2</span></a>
+    <a href="#" title="educacion2"><span><img src="data1/tooltips/educacion2.jpg" alt="educacion2"/>3</span></a>
+    <a href="#" title="edicacion6"><span><img src="data1/tooltips/edicacion6.png" alt="edicacion6"/>4</span></a>
+    <a href="#" title="educacion1"><span><img src="data1/tooltips/educacion1.jpg" alt="educacion1"/>5</span></a>
+    <a href="#" title="edicacion7"><span><img src="data1/tooltips/edicacion7.jpg" alt="edicacion7"/>6</span></a>
+    <a href="#" title="educacion4"><span><img src="data1/tooltips/educacion4.jpg" alt="educacion4"/>7</span></a>
+    <a href="#" title="edicacion8"><span><img src="data1/tooltips/edicacion8.jpg" alt="edicacion8"/>8</span></a><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">bootstrap slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>  
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+</div>
+<!-- End WOWSlider.com BODY section -->
+<div data-role="main" class="ui-content" align="center">
+<div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+ <li class="ui-first-child">
+ <a href="http://www.redalyc.org/pdf/132/13206506.pdf" data-role="button" id="beep">
+ <h3>Más información</h3> 
+ </a>
+ </li>
+ </ul>
+ </div>
+</div> </div> </div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/bd.png" width="46" height="46">
+</div>
+<h3>Aplicación Díez, RCS</h3>
+</div>
+</div>
+<!-- termina uso en la escuela-->
+    
+    
+  <div data-role="page" id="Pagina8" data-add-back-btn="true" dat-back-btn-text="Regresar" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>La relacion de Las Bases de Datos y la escuela</h1>
+</div>
+<div data-role="content" align="center">
+<div data-role="collapsible" data-content-theme="false">
+<h1>C.B.T.i.s 16</h1>
+<div><br>
+</div>
+<div>
+<img src="imagenes/DGTI.jpg" width="80%" height="80%">
+</div>
+</div>
+  <h3>Muchas escuelas Ofrencen la enceñanza de las Bases de Datos pero solo nos enfocaremos en <strong>C.B.T.i.s. no. 16</strong></h3><p>
+<p>C.B.T.i.s te Ofrece la carrera de Técnico en programación ofrece las competencias profesionales que permiten al estudiante realizar actividades dirigidas a: analizar, diseñar, desarrollar , instalar y mantener software de aplicación tomando como base los requerimientos del usuario.</p>
+<p>Todas estas competencias posibilitan al egresado su incorporación al mundo laboral o desarrollar procesos productivos independientes, de acuerdo con sus intereses profesionales y necesidades de su entorno social.</p>
+<p>Así mismo, contribuyen a desarrollar competencias genéricas que les permitan comprender el mundo e influir en él, les capacita para aprender de forma autónoma a lo largo de la vida, desarrollar relaciones armónicas, participar en los ámbitos social, profesional y político.</p>
+<h4>Permite al técnico incorporarse al ámbito laboral en diversos sitios de inserción como:</h4>
+<ul type="circle">
+<li>Edición de Software y edición de software integrada con la reproducción</li>
+<li>Servicios de diseño de sistemas de cómputo y servicios relacionados</li>
+<li>Escuelas de computación del sector privado</li>
+<li>Escuelas de computación del sector publico</li>
+<li>Edición y difusión de contenido exclusivamente a través de Internet</li>
+</ul>
+<p>Servicios de búsqueda en la red Para lograr las competencias el estudiante debe de tener una formación profesional, que se inicia en el segundo semestre y se concluye en el sexto semestre, desarrollando en este lapso de tiempo las competencias profesionales que marca el programa de estudios. Los primeros tres módulos de la carrera técnica tienen una duración de 272 horas cada uno, y los dos últimos de 192, un total de 1200 horas de formación profesional. Cabe destacar que los módulos de formación profesional tienen carácter transdisciplinario, por cuanto corresponden con objetos y procesos de transformación que implica la integración de saberes de distintas disciplinas.</p>
+<h2>Perfil de egreso</h2>
+<p>La formación que ofrece la carrera de Técnico en programación permite al egresado, a través de la articulación de saberes de diversos campos, realizar actividades dirigidas a la:</p>
+<ul type="square">
+<li>Instalación y desarrollo de software de aplicación utilizando programación estructurada y orientada a objetos en ambientes web y móviles, con almacenamiento persistente de datos</li>
+<li>Así como la configuración y administración de plataforma e-learning y
+Comercio electrónico.</li></ul>
+<p>Durante el proceso de formación de los cinco módulos, el estudiante desarrollará o reforzará:Las siguientes competencias profesionales:</p>
+<p>Desarrolla, administra y configura soluciones de e – learning y comercio electrónico Y las competencias de empleabilidad y productividad:</p>
+<ul type="circle">
+<li>Trabajo en equipo</li>
+<li>Comunicación efectiva</li>
+<li>Adaptabilidad</li>
+<li>Atención al proceso</li>
+<li>Orientación al logro</li>
+<li>Planeación y organización</li>
+<li>Orientación a la mejora continua</li>
+<li>Atención al cliente</li>
+<li>Ética profesional</li></ul>
+<h2>El egresado de la carrera de Técnico en programación está en posibilidades de demostrar las competencias genéricas como:</h2>
+<ul type="circle">
+<li>Escucha, interpreta y emite mensajes pertinentes en distintos contextos mediante la utilización de medios, códigos y herramientas apropiados</li>
+<li>Desarrolla innovaciones y propone soluciones a problemas a partir de métodos establecidos</li>
+<li>Aprende por iniciativa e interés propio a lo largo de la vida
+Participa y colabora de manera efectiva en equipos</li>
+<li>Mapa de competencias profesionales de la carrera de Técnico en programación</li></ul>
+<ul type="circle">
+<h3>Modulo I - Desarrolla e instala software de aplicación utilizando programación estructurada, con almacenamiento persistente de los datos</h3>
+<li>Submódulo 1 - Desarrolla software utilizando programación estructurada</li>
+<li>Submódulo 2 - Diseña y administra bases de datos simples</li>
+<h3>Modulo II - Desarrolla software de aplicación utilizando programación orientada a objetos, con almacenamiento persistente de los datos</h3>
+<li>Submódulo 1 - Desarrolla software de aplicación utilizando programación orientada a objetos</li>
+<li>Submódulo 2 - Diseña y administra bases de datos avanzadas</li>
+<h3>Modulo III - Desarrolla aplicaciones web y móviles</h3>
+<li>Submódulo 1 - Desarrolla aplicaciones web</li>
+<li>Submódulo 2 - Desarrolla aplicaciones móviles</li>
+<h3>Modulo IV - Administra sistemas operativos, de aplicaciones y servicios</h3>
+<li>Submódulo 1 - Administra sistemas operativos</li>
+<li>Submódulo 2 - Instala y configura aplicaciones y servicios</li>
+<h3>Modulo V - Desarrolla, administra y configura soluciones de e–learning y comercio electrónico</h3>
+<li>Submódulo 1 - Administra y configura plataformas de e – learning</li>
+<li>Submódulo 2 - Desarrolla soluciones de comercio electrónico</li>
+</ul>
+  </p>
+  </div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/bd.png" width="46" height="46">
+</div>
+<h4>Aplicación Díez, RCS </h4>
+</div>
+</div>
+<!--termina relacion con la escuela-->
+
+    <div data-role="page" id="Pagina9" data-add-back-btn="true" dat-back-btn-text="Regresar" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Sitios Web vinculados a bases de datos </h1>
+</div>
+<div data-role="content" align="center">
+  <div data-role="collapsible" data-content-theme="false">
+<h1>Nota!</h1>
+<div>
+  <p>Recuerdo que cuando empece a ver estos temas todos los términos se me hacian muy confusos, tecnologías y conceptos que para mi se me hacian lo mis mo pero no solo estaban relaionados.</p>
+<p>Con esto en mente, nuestro profesor de clase en la carrera de bachillerato de programación nos pidio crear esta aplicación sobre las bd en diferentes formas. Así que tratará de desmitificar los sitios web vinculados a bases de datos ... también llamados 'páginas web dinámicas' o sitios web..</p>
+</div> </div>
+
+<img src="imagenes/A.jpg" width="70%" height="70%" ><p>
+
+<ul type="circle">
+Esta es una breve descripcion para comprender los siguentes conseptos:<p>
+<li>¿Cuándo se necesita construir sitios web dinámicos?</li>
+<li>¿Qué herramientas se encuentran disponibles para construirlos?</li>
+<li>¿Qué son sitios web dinámicos?</li>
+</p> </ul>
+<li>Para entender páginas web dinámicas, usted primero tiene que comprender qué son las páginas normales o en otras palabras, las páginas web "estáticas".</li>
+<p>Páginas web típicas (que no son dinámicas) no cambian cada vez que el navegador carga la página, y tampoco cambian si un usuario hace clic en un botón. El único cambio que se pueden ver en una página web estática, es la carga y descarga… como sucede cuando se hace clic sobre un hipervínculo..</p>
+<p>En pocas palabras: las páginas web estática (páginas construidas normalmente,) siempre se ven igual y el contenido nunca cambia a menos que se cargue una nueva página, o usted cambie la página usted mismo (cargando la nueva versión de la página en el servidor web).</p>
+
+<p>SITIOS WEB VINCULADAS A BASES DE DATOS.
+Unos de los tipos más comunes de páginas web dinámicas son los vinculados a bases de datos. Esto significa que usted tiene una página web que coge la información de una base de datos (la página web está conectado a la base de datos a través de la programación,) e inserta la información en la página web cada vez que esta se carga.</p>
+<p>Si la información almacenada en la base de datos cambia, la página web conectada a la base de datos también cambiará en consecuencia (y automáticamente) sin intervención humana.</p>
+
+<p>Esto es comúnmente visto en los sitios web de organizaciones bancarias en línea, donde se puede acceder (con su nombre de usuario y contraseña) y ver el saldo de su cuenta bancaria. La información de su cuenta bancaria se almacena en una base de datos que está conectada a la página web a través de la 
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ImageB','','imagenes/C.png',1)"><img src="imagenes/D.jpg" width="70%" height="70%" id="ImageB"></a>
+programación (por ejemplo: PHP, ASP), permitiéndole ver su información bancaria.</p>
+   </p> </div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/bd.png" width="46" height="46">
+</div>
+<h4>Aplicación Díez, RCS </h4>
+</div> </div>  
+<!-- termina bd en sitios web-->
+
+      <div data-role="page" id="Pagina10" data-add-back-btn="true" dat-back-btn-text="Regresar" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Datos del Dsarrollador</h1>
+</div>
+<div data-role="content" align="center">
+  <div data-role="collapsible" data-content-theme="false">
+<h1>FOTO</h1>
+<div>
+<img src="imagenes/FotoPerfil.jpg" width="60%" height="60%">
+</div>
+</div>
+<div style="background-color: MistyRose">
+<strong><br> <p>Nombre del Alumno:Ramos Contla Sofia</p>
+<p>Grupo:"G"</p>
+<P>Semestre:4°</P>
+<p>Sub Modulo:Diseña Aplicaciones Moviles</p>
+<p>Docente: Lic. José Antonio Gómez Hernández </p><br> </strong></div><br>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','imagenes/AppMoviles.jpg',1)"><img src="imagenes/DAM.jpg" width="70%" height="70%" id="Image6"></a>
+ </div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+<div>
+<img src="imagenes/bd.png" width="46" height="46">
+</div>
+<h4>Aplicación Díez, RCS </h4>
+</div>
+</div>
+<!--termina datos desarrollador-->
+</div>
+</body>
+</html>
